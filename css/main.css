@@ -1,0 +1,110 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+#container{
+    width:100%;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 20vh;
+    /*background-color: red;    /* Used for positioning*/
+}
+#logo{
+    order: 1;
+    display:flex;
+    align-items: center;
+    /*background-color: green;*/    /* Used for positioning*/
+}
+#form1{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    order:2;
+}
+#searchBar{
+    width: 584px;
+    height: 44px;
+    padding: 2px;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid lightgray;
+    border-radius: 23px;
+    order:3;
+    /*background-color: blue;*/    /* Used for positioning*/
+}
+#searchBar:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 1px 1px 5px rgba(94, 94, 94, 0.4);
+}
+#searchBar:focus-within{
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 1px 1px 5px rgba(94, 94, 94, 0.4);
+}
+#searchIcon{
+    width: 5%;
+    margin: auto;
+    /*background-color: green;    /* Used for positioning*/
+}
+#searchIcon img{
+    display: block;
+    width: 20px;
+    height: auto;
+    opacity: 50%;
+    margin: auto;
+}
+#searchText{
+    width: 94%;
+    padding: 2px;
+}
+input[type=text], textarea {
+    border: 0;
+  }
+  
+  input[type=text]:focus, textarea:focus {
+    outline: none;
+  }
+
+#search{
+    width: 100%;
+    height:25px;
+    border:none;
+}
+#butWrap{
+    order:4;
+}
+#butWrap button:hover{
+    border: 1px solid lightgray;
+}
+#button1{
+    margin: 15px;
+    padding-left:15px;
+    padding-right:15px;
+    width: auto;
+    height: 35px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 5px;
+    border: none;
+}
+#button2{
+    margin: 15px;
+    padding-left:15px;
+    padding-right:15px;
+    width: auto;
+    height: 35px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 5px;
+    border: none;
+}
