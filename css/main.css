@@ -2,15 +2,114 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+ }
+
+ html, body {
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
   }
 
+ /*******************************
+**********Nav Bar****************
+*********************************/
+#navBar{
+    display: flex;
+    margin: 1vh;
+    justify-content: space-between;
+    /*background-color: red;    /* Used for positioning*/
+}
+a:link{
+    color: black;
+    text-decoration: none;
+}
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: black;
+    text-decoration: underline;
+}
+a:active{
+    color: black;
+    text-decoration: underline;
+}
+#navBar-left{
+    width:10%;
+    display: flex;
+    order:1;
+    align-items: center;
+    /*background-color: fuchsia;    /* Used for positioning*/
+}
+#navBar-right{
+    width:300px;
+    order:1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /*background-color: fuchsia;    /* Used for positioning*/
+}
+#navBar-menu{
+    height:45px;
+    width:45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: purple;    /* Used for positioning*/
+}
+#navBar-menu:hover{
+    background-color: rgb(231, 231, 231);
+    border-radius: 50%;
+}
+#navBar-menu img{
+    display: block;
+    width:auto;
+    height:20px;;
+}
+#navBar-prof{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#navBar-prof:hover{
+    background-color: rgb(231, 231, 231);
+    border-radius: 50%;
+    border: 2px solid rgb(231, 231, 231);
+}
+#navBar-prof img{
+    display: block;
+    width:auto;
+    height:43px;;
+    border-radius: 50%;
+}
+.links {
+    font-size:13px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    /*background-color: green;    /* Used for positioning*/
+}
+
+
+
+/*******************************
+***********Main Body************
+*******************************/
 #container{
     width:100%;
-    height: 100vh;
+    max-height: 100vh;
     display:flex;
     align-items: center;
     align-content: center;
     justify-content: center;
+    flex: 1 0 auto;
     flex-direction: column;
     padding-bottom: 20vh;
     /*background-color: red;    /* Used for positioning*/
@@ -107,4 +206,48 @@ input[type=text], textarea {
     background-color: rgb(247, 247, 247);
     border-radius: 5px;
     border: none;
+}
+
+/*******************************
+**************Footer************
+*******************************/
+
+footer{
+    height: 5vh;
+    display: flex;
+    flex-shrink: 0;
+    margin: 0;
+    justify-content: space-between;
+    position:sticky;
+    background-color: rgb(247, 247, 247);    /* Used for positioning*/
+}
+#footer-left{
+    width:auto;
+    display: flex;
+    order:1;
+    align-items: center;
+    /*background-color: fuchsia;    /* Used for positioning*/
+}
+#footer-middle{
+    width:auto;
+    display: flex;
+    align-items: center;
+    order:2;
+}
+#top-logo{
+    display:flex;
+    align-items: center;
+    /*background-color: green;    /* Used for positioning*/
+}
+#footer-right{
+    width:auto;
+    display: flex;
+    order:3;
+    align-items: center;
+    /*background-color: purple;    /* Used for positioning*/
+}
+.links img{
+    height:24px;
+    width: auto;
+    padding-right: 10px;
 }
