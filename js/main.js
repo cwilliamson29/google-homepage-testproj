@@ -14,3 +14,9 @@
                     txt.textContent = " ";
                 }
             }
+
+            const button = document.querySelector('#button2');
+
+            button.onclick = function(){
+                alert("I'm sorry, Dave, I'm afraid I can't do that.");
+            }
